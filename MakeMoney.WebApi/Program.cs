@@ -1,5 +1,7 @@
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using MakeMoney.Domain.Students;
-using MakeMoney.EntityFrameworkCore.Students;
+using MakeMoney.WebApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,8 +12,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory(containerbuilder => {
+    containerbuilder.RegisterModule(new MakeMoneyWebApiModule());
+}));
 
-builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+//builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 
 var app = builder.Build();
 

@@ -17,7 +17,7 @@ namespace MakeMoney.EntityFrameworkCore.Students
             }
             student?.SetName("张三");
             Console.WriteLine("MySql查询Student");
-            Console.WriteLine($"student Name = {student.Name}");
+            Console.WriteLine($"student Name = {student?.Name}");
             return student;
         }
     }
