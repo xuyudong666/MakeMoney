@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33402.96
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeMoney.Domain", "MakeMoney.Domain\MakeMoney.Domain.csproj", "{0B900129-5277-48AA-8476-430BB91886E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeMoney.Domain", "MakeMoney.Domain\MakeMoney.Domain.csproj", "{0B900129-5277-48AA-8476-430BB91886E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeMoney.Domain.Abstraction", "MakeMoney.Domain.Abstraction\MakeMoney.Domain.Abstraction.csproj", "{230C8089-86D9-4F3B-83B8-931F02213250}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeMoney.EntityFrameworkCore", "MakeMoney.EntityFrameworkCore\MakeMoney.EntityFrameworkCore.csproj", "{0196A855-E034-432F-B321-626A50045BC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeMoney.WebApi", "MakeMoney.WebApi\MakeMoney.WebApi.csproj", "{7275BD96-C9F5-4A40-89D5-1AC4B734D7FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{0B900129-5277-48AA-8476-430BB91886E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B900129-5277-48AA-8476-430BB91886E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B900129-5277-48AA-8476-430BB91886E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{230C8089-86D9-4F3B-83B8-931F02213250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{230C8089-86D9-4F3B-83B8-931F02213250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{230C8089-86D9-4F3B-83B8-931F02213250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{230C8089-86D9-4F3B-83B8-931F02213250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0196A855-E034-432F-B321-626A50045BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0196A855-E034-432F-B321-626A50045BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0196A855-E034-432F-B321-626A50045BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0196A855-E034-432F-B321-626A50045BC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7275BD96-C9F5-4A40-89D5-1AC4B734D7FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7275BD96-C9F5-4A40-89D5-1AC4B734D7FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7275BD96-C9F5-4A40-89D5-1AC4B734D7FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7275BD96-C9F5-4A40-89D5-1AC4B734D7FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\MakeMoney.Domain.Abstraction\MakeMoney.Domain.Abstraction.csproj" />
-  </ItemGroup>
-
 </Project>
