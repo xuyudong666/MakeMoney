@@ -7,7 +7,7 @@ namespace MakeMoney.WebApi.Controllers {
     [ApiController]
     public class StudentController : ControllerBase {
         private readonly IStudentRepository _studentRepository;
-
+        private readonly IWebHostEnvironment _webHostEnvironment;
         public StudentController(IStudentRepository studentRepository) {
             _studentRepository = studentRepository;
         }
